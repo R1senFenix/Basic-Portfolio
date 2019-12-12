@@ -1,28 +1,83 @@
 body {
-  width: 60%;
+  width: 960px;
   margin: auto;
   font-family: Arial, "Helvetica Neue", "Helvetica, sans-serif";
 }
 header {
+  width: 700px;
+  margin: auto;
   border-bottom-color: #cccccc;
   background-color: #ffffff;
+  text-align: justify;
+  letter-spacing: 1px;
 }
 
-h1 {
+header h1 {
   background-color: #4aaaa5;
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
+  width: fit-content;
+  float: left;
+  padding: 25px;
+  height: 100%;
+}
+header h1,
+header nav {
+  display: inline-block;
+}
+header::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+header h1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+h2 {
+  color: #4aaaa5;
+  padding-bottom: 25px;
 }
 nav {
   float: right;
 }
-#profPic {
-  height: 200px;
-  width: 200px;
-  position: absolute;
+.infoBody {
+  background-image: url("../images/vintage-wallpaper.png");
+  border-top: thick solid grey;
 }
-
+.container {
+  margin: 25px auto;
+  width: 700px;
+  background-color: #ffffff;
+  border: thin solid #dddddd;
+  display: block;
+  clear: both;
+}
+#profPic {
+  width: 20%;
+  float: left;
+  margin: 25px;
+}
+.sectHead {
+  margin: 25px;
+  border-bottom: solid grey;
+}
 #infoPar {
-  position: absolute;
-  margin-left: 25px;
+  margin: 25px auto;
+  padding-right: 25px;
+  padding-left: 25px;
+  text-align: justify;
+  margin-top: 25px;
+}
+footer {
+  width: 960px;
+  background-color: #666666;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  vertical-align: bottom;
+  border-top: thick solid #4aaaa5;
+  margin: auto;
 }
