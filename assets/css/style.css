@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   width: 960px;
   margin: auto;
   font-family: Arial, "Helvetica Neue", "Helvetica, sans-serif";
@@ -20,32 +23,30 @@ header h1 {
   float: left;
   padding: 25px;
   height: 100%;
+  font-weight: bolder;
+  font-size: x-large;
 }
-header h1,
-header nav {
+.headLink {
   display: inline-block;
-}
-header::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-header h1::before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
+  line-height: 73px;
 }
 h2 {
   color: #4aaaa5;
   padding-bottom: 25px;
+  font-weight: bold;
+}
+a {
+  color: gray;
+  text-decoration: none;
 }
 nav {
   float: right;
 }
 .infoBody {
+  margin-top: 0px;
+  flex: 1;
   background-image: url("../images/vintage-wallpaper.png");
-  border-top: thick solid grey;
+  border-top: 3px solid grey;
 }
 .container {
   margin: 25px auto;
@@ -59,20 +60,32 @@ nav {
   width: 20%;
   float: left;
   margin: 25px;
+  margin-top: 0px;
 }
 .sectHead {
   margin: 25px;
   border-bottom: solid grey;
 }
 #infoPar {
-  margin: 25px auto;
+  margin: 25px;
   padding-right: 25px;
   padding-left: 25px;
   text-align: justify;
   margin-top: 25px;
 }
+form {
+  margin: 25px;
+}
+input {
+  width: 100%;
+  margin: 8px 0;
+}
+input[name="message"] {
+  height: 150px;
+  resize: vertical;
+}
+
 footer {
-  width: 960px;
   background-color: #666666;
   color: white;
   text-align: center;
@@ -80,4 +93,5 @@ footer {
   vertical-align: bottom;
   border-top: thick solid #4aaaa5;
   margin: auto;
+  width: 960px;
 }
