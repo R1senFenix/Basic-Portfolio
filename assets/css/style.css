@@ -2,7 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   margin: auto;
   font-family: Arial, "Helvetica Neue", "Helvetica, sans-serif";
 }
@@ -29,6 +29,7 @@ header h1 {
 .headLink {
   display: inline-block;
   line-height: 73px;
+  color: gray;
 }
 h2 {
   color: #4aaaa5;
@@ -66,7 +67,7 @@ nav {
   margin: 25px;
   border-bottom: solid grey;
 }
-#infoPar {
+.infoPar {
   margin: 25px;
   padding-right: 25px;
   padding-left: 25px;
@@ -93,5 +94,5 @@ footer {
   vertical-align: bottom;
   border-top: 8px solid #4aaaa5;
   margin: auto;
-  width: 960px;
+  width: 100%;
 }
